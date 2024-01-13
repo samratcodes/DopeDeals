@@ -1,0 +1,12 @@
+#SearchSection{
+    border: 2px solid rgb(249,70,22);
+}
+#NavDetailsSection i{
+    border-radius:2rem;
+    color:rgb(94,98,104);
+    font-size: 1.2rem;
+}
+#NavigationBar{
+    background-color: rgb(226,239,252);
+    padding:0rem 1rem 0rem 1rem;
+}
