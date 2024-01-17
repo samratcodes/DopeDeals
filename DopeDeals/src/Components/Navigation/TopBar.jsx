@@ -2,20 +2,20 @@ import React from 'react'
 
 const TopBar = () => {
   return (
-    <div className='w-1/2  p-5 flex justify-around items-center text-white text-base font-semibold '>
+    <div id='TopBar' className='w-1/2  p-5 flex justify-around items-center text-white text-base font-semibold '>
     <div>
       Home 
     </div>
-    <div class=" group">
+    <div className=" group">
   <div >
-    Shop <i class="fa-solid fa-caret-down  group-hover:rotate-180"></i>
+    Shop <i className="fa-solid fa-caret-down  group-hover:rotate-180"></i>
   </div>
   
 
-  <div class="hidden absolute mt-0 bg-white border border-green-600 py-2 px-4 rounded-lg group-hover:block">
+  <div className="hidden absolute  bg-white border-l-4 border-green-600 py-2 px-4 rounded-lg group-hover:flex flex-col">
  
-    <a href="#" class="block hover:text-blue-500">Submenu Item 1</a>
-    <a href="#" class="block hover:text-blue-500">Submenu Item 2</a>
+    <a href="#" className=" text-green-600">Submenu Item 1</a>
+    <a href="#" className=" text-green-600">Submenu Item 2</a>
    
   </div>
 </div>
