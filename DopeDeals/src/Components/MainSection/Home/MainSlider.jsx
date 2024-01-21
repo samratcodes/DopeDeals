@@ -3,9 +3,9 @@ import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from 'react-ico
 
 const MainSlider = () => {
   const slides = [
+    "src/assets/Slider3.png",
     "src/assets/Slider1.png",
     "src/assets/Slider2.png",
-    "src/assets/Slider3.png",
     "src/assets/Slider4.png",
   ];
 
@@ -33,7 +33,7 @@ const MainSlider = () => {
   };
 
   return (
-    <div className="w-2/3 rounded-lg  overflow-hidden relative">
+    <div className="w-2/3 rounded-lg mt-2 overflow-hidden relative">
       <div
         className='flex transition ease-out duration-1000'
         style={{

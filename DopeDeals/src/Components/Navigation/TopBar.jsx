@@ -2,13 +2,13 @@ import React from 'react'
 
 const TopBar = () => {
   return (
-    <div id='TopBar' className='w-1/2  p-5 flex justify-around items-center text-white text-base font-semibold '>
+    <div id='TopBar' className='w-1/2 py-2 flex justify-around items-center text-white text-base font-semibold '>
     <div>
-      Home 
+      Home
     </div>
     <div className=" group">
   <div >
-    Shop <i className="fa-solid fa-caret-down  group-hover:rotate-180"></i>
+    Shops <i className="fa-solid fa-caret-down  group-hover:rotate-180"></i>
   </div>
   
 
@@ -19,10 +19,7 @@ const TopBar = () => {
    
   </div>
 </div>
-    {/* <div >
-    Shop <i class="fa-solid fa-caret-down transform origin-center transition-transform hover:rotate-90"></i>
 
-    </div> */}
     <div>
      Categories <i className="fa-solid fa-caret-down"></i>
     </div>
