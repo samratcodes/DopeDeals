@@ -24,7 +24,7 @@ const Categories = () => {
       </div>
       <div className=' flex overflow-x-auto  '>
       {categories.map((category,index)=>(
-         <div key={index} className=' bg-white text-gray-700 rounded-xl p-4 m-2 w-32 border-3 flex flex-col justify-center 
+         <div key={index} className=' text-gray-700 rounded-xl p-4 m-2 w-32 border-3 flex flex-col justify-center 
          items-center hover:border-green-400 border-2' id='Home_Category'>
             {category.icon}
          {category.name}
