@@ -14,8 +14,8 @@ const Categories = () => {
                        ]
   return (
     <div className=' pt-4 w-4/5 '>
-      <div className='flex justify-between'>
-       <div className=' text-lg font-bold'>
+      <div className='flex justify-between ml-2'>
+       <div className=' text-lg font-bold text-green-500'>
         Categories
        </div>
        <div className=' text-slate-600'>
@@ -24,8 +24,8 @@ const Categories = () => {
       </div>
       <div className=' flex overflow-x-auto  '>
       {categories.map((category,index)=>(
-         <div className=' bg-white rounded-xl p-4 m-2 w-32 border-3 flex flex-col justify-center 
-         items-center hover:border-green-600 border-2'>
+         <div key={index} className=' bg-white text-gray-700 rounded-xl p-4 m-2 w-32 border-3 flex flex-col justify-center 
+         items-center hover:border-green-400 border-2' id='Home_Category'>
             {category.icon}
          {category.name}
          </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import MainSlider from './MainSlider'
 import Categories from './Categories'
+import DopestDeals from '../DopestDeals'
 
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     <div className=' flex flex-col justify-center items-center' id='Home'>
 <MainSlider/>
 <Categories/>
+<DopestDeals/>
     </div>
   )
   }

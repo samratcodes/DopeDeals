@@ -3,9 +3,9 @@ import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from 'react-ico
 
 const MainSlider = () => {
   const slides = [
+    "src/assets/Slider2.png",
     "src/assets/Slider3.png",
     "src/assets/Slider1.png",
-    "src/assets/Slider2.png",
     "src/assets/Slider4.png",
   ];
 
@@ -15,10 +15,10 @@ const MainSlider = () => {
     const interval = setInterval(() => {
       if (current === slides.length - 1) setCurrent(0);
       else setCurrent(current + 1);
-    }, 3000);
+    }, 4000);
 
     return () => {
-      clearInterval(interval); // Clear the interval on component unmount
+      clearInterval(interval); 
     };
   }, [current, slides.length]);
 
@@ -33,7 +33,22 @@ const MainSlider = () => {
   };
 
   return (
-    <div className="w-2/3 rounded-lg mt-2 overflow-hidden relative">
+    <div className='flex justify-center items-center'>
+        <div className='hidden md:flex sm:flex flex-col'>
+    <div className="m-4 flex flex-col w-48 h-24  text-green-500 text-xl font-bold rounded-2xl  justify-center items-center" id='SliderCard'>
+    <i className="fa-solid fa-arrow-trend-up"></i> Trendy Clothes 
+    </div>
+    <div className="m-4 w-48 h-24 text-green-500 text-xl font-bold rounded-2xl flex flex-col justify-center items-center" id='SliderCard'>
+    <i className="fa-solid fa-percent"></i> Dopest Sales
+    </div>
+    <div className="m-4 w-48 h-24  text-green-500 text-xl font-bold rounded-2xl flex flex-col justify-center items-center" id='SliderCard'>
+    <i className="fa-solid fa-headset"></i> 24/7 Support
+    </div>
+    <div className="m-4 w-48 h-24  text-green-500 text-xl font-bold rounded-2xl flex flex-col justify-center items-center" id='SliderCard'>
+    <i className="fa-solid fa-truck-fast"></i> Fast Delivery
+    </div>
+   </div>
+    <div className=" w-3/5 flex rounded-lg overflow-hidden relative"> 
       <div
         className='flex transition ease-out duration-1000'
         style={{
@@ -67,6 +82,8 @@ const MainSlider = () => {
           ></div>
         ))}
       </div>
+    </div>
+ 
     </div>
   );
 };

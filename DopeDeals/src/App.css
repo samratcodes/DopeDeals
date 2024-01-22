@@ -30,3 +30,9 @@
 #Slider{
     z-index: 1;
 }
+#SliderCard{
+    background-color: rgb(255, 255, 255);
+}
+#Home_Category{
+    background-color: rgb(214, 225, 237);
+}
