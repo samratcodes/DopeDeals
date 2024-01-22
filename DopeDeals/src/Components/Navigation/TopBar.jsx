@@ -1,6 +1,7 @@
 import React from 'react'
 
 const TopBar = () => {
+ 
   return (
     <div id='TopBar' className='w-1/2 py-2 flex justify-around items-center text-white text-base font-semibold '>
     <div>
@@ -29,6 +30,7 @@ const TopBar = () => {
     <div>
       Blogs
     </div>
+
     </div>
   )
 }

@@ -1,7 +1,8 @@
 import React from 'react'
 import MainSlider from './MainSlider'
 import Categories from './Categories'
-import DopestDeals from '../DopestDeals'
+import DopestDeals from './DopestDeals'
+
 
 
 const Home = () => {
