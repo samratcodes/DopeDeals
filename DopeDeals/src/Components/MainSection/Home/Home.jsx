@@ -2,6 +2,7 @@ import React from 'react'
 import MainSlider from './MainSlider'
 import Categories from './Categories'
 import DopestDeals from './DopestDeals'
+import Shops from './Shops'
 
 
 
@@ -11,6 +12,7 @@ const Home = () => {
 <MainSlider/>
 <Categories/>
 <DopestDeals/>
+<Shops/>
     </div>
   )
   }
