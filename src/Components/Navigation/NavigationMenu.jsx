@@ -4,8 +4,8 @@ const NavigationMenu = () => {
   return (
     <>
     <div 
-    className='flex w-full mt-2 justify-between  items-center'
-    id='NavTopSection'
+    className='flex w-full pt-2 justify-between  items-center'
+    id='NavigationBar'
     >
     <div 
     className='flex  w-1/6 flex-col justify-center items-center'
