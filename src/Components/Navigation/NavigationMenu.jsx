@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Logo from '../../assets/Logo.png'
 
 const NavigationMenu = () => {
   return (
@@ -13,7 +13,7 @@ const NavigationMenu = () => {
     >
     <img 
     className=' w-10 rounded-lg' 
-    src='https://document-export.canva.com/OrTVg/DAF5xYOrTVg/20/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20240123%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240123T183131Z&X-Amz-Expires=44144&X-Amz-Signature=c4c598fd92f10c4744e42ff9dd543f559e77ae7c3b377ffcbd1bd10ed3568884&X-Amz-SignedHeaders=host&response-expires=Wed%2C%2024%20Jan%202024%2006%3A47%3A15%20GMT'alt=""
+    src={Logo}alt=""
     />
     <h1 className=' text-base text-green-500 font-semibold font-mono'>
         Dope Deals
