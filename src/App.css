@@ -1,0 +1,40 @@
+#SearchSection button{
+    color:  rgb(12,205,13);
+}
+#NavDetailsSection i{
+    border-radius:2rem;
+    padding: 0.5rem 1rem;
+    background-color:rgb(12,205,13);
+    color:rgb(255, 255, 255);
+    font-size: 1.1rem;
+}
+#TopBar{ 
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+#NavigationBar{
+   background-color: rgb(196, 213, 230);
+}
+#NavDetailsSection img{
+    object-fit: cover;
+    border-radius: 2rem;
+    width: 3rem;
+    height: 3rem;
+}
+#Home{
+    background-color: rgb(241,243,245);
+}
+.slick-prev, .slick-next{
+    background-color: rgb(12,205,13);
+}
+#Slider{
+    z-index: 1;
+}
+#SliderCard{
+    background-color: rgb(255, 255, 255);
+}
+#Home_Category{
+    background-color: rgb(214, 225, 237);
+}
