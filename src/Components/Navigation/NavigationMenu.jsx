@@ -12,7 +12,7 @@ const NavigationMenu = () => {
     >
     <img 
     className=' w-10 rounded-lg' 
-    src="src\assets\Logo.png" alt=""
+    src="../../assets/Logo.png" alt=""
     />
     <h1 className=' text-base text-green-500 font-semibold font-mono'>
         Dope Deals
