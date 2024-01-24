@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from 'react-icons/bs';
-
+import Slider1 from'../../../assets/Slider1.png'
+import Slider2 from'../../../assets/Slider2.png'
+import Slider3 from'../../../assets/Slider3.png'
+import Slider4 from'../../../assets/Slider4.png'
 const MainSlider = () => {
   const slides = [
-    "src/assets/Slider2.png",
-    "src/assets/Slider3.png",
-    "src/assets/Slider1.png",
-    "src/assets/Slider4.png",
+    Slider2,
+    Slider3,
+    Slider4,
+  Slider1,
   ];
 
   const [current, setCurrent] = useState(0);
