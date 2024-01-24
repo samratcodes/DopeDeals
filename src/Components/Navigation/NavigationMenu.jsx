@@ -1,4 +1,5 @@
 import React from 'react'
+import{logo} from '../../assets/Logo.png'
 
 const NavigationMenu = () => {
   return (
@@ -12,7 +13,7 @@ const NavigationMenu = () => {
     >
     <img 
     className=' w-10 rounded-lg' 
-    src="../../assets/Logo.png" alt=""
+    src={logo}alt=""
     />
     <h1 className=' text-base text-green-500 font-semibold font-mono'>
         Dope Deals
