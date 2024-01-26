@@ -1,11 +1,13 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const Card = (props) => {
     console.log(props)
   return (
+   
     <div className=' flex justify-between flex-wrap'>
     {props.loading? <div className='text-2xl bg-green-500 text-white text-center'>Loading...</div> :
       props.result.map((product) => (
+        <Link to={`/product/${product.id}`}>
         <div 
         className='my-2 '
         key={product.id}
@@ -32,11 +34,12 @@ const Card = (props) => {
        </div>
       </div>
         </div>
-
+        </Link>
         
       )
     )}
     </div>
+  
   )
 }
 
