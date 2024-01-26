@@ -11,14 +11,13 @@ const TopBar = () => {
     </div>
     <div className=" group">
   <div >
-    Shops <i className="fa-solid fa-caret-down  group-hover:rotate-180"></i>
+    Brands <i className="fa-solid fa-caret-down  group-hover:rotate-180"></i>
   </div>
-  
-
   <div className="hidden absolute  bg-white border-l-4 border-green-600 py-2 px-4 rounded-lg group-hover:flex flex-col">
  
    <Link to='/about' className=" text-green-600">Submenu Item 1</Link>
-    <a href="#" className=" text-green-600">Submenu Item 2</a>
+   <Link to='/contact' className=" text-green-600">SS </Link>
+
    
   </div>
 </div>
