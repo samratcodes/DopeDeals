@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Loader from './Loader'
 const Card = (props) => {
   return (
    
     <div className=' flex justify-between flex-wrap'>
-    {props.loading? <div className='text-2xl bg-green-500 flex justify-center w-full text-white text-center'>Loading...</div> :
+    {props.loading? <Loader/> :
       props.result.map((product) => (
         <Link to={`/product/${product.id}`}  key={product.id}>
         <div 

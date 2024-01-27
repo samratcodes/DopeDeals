@@ -44,10 +44,10 @@ const TopBar = () => {
 </div>
     </div>
     <div>
-      Dopest Deals <i className="fa-solid fa-caret-down"></i>
+    <Link to='/DopeDeals'> Dopest Deals</Link> 
     </div>
     <div>
-      Blogs
+      <Link to='/Blogs'>Blogs</Link>
     </div>
 
     </div>

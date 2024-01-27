@@ -2,6 +2,7 @@ import React, { useEffect ,useState } from 'react'
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import  useDataFetching  from '../../../Hooks/useDataFetching'
+import Loader from '../Loader';
 const ProductPage = () => {
   const {id}=useParams();
     const {results,loading}=useDataFetching(`https://dummyjson.com/products/${id}`);
@@ -33,7 +34,7 @@ const changeActiveImage=(image)=>{
 }
   return (
    < div className='flex flex-col items-center p-4' id='ProductPage'>
-{loading?<div>Loading...</div>:
+{loading?<Loader/>:
  
  <div   className=' w-11/12 sm:w-4/5  flex  flex-col sm:flex-row'>
  <div className='w-full sm:w-1/2 border-r-2 border-slate-200'>
