@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import Home from './Components/MainSection/Home/Home.jsx'
 import ProductPage from './Components/MainSection/ProductPage/ProductPage.jsx'
+import Brands from './Components/MainSection/Brands/Brands.jsx'
+import Category from './Components/MainSection/Category/Category.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,8 +31,24 @@ const router = createBrowserRouter([
         path:'product/:id',
         element:<ProductPage/>
       },
+      {
+        path:'Brands/:brand',
+        element:<Brands/>
+      },
+      {
+        path:'category/:category',
+        element:<Category/>
+      }
     ]
-  },
+  },{
+    path: "*",
+    element: <App/>,
+    children:[
+      {
+        path:'*',
+        element:<Home/>
+      }]
+  }
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

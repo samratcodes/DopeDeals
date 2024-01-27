@@ -1,16 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 const Card = (props) => {
-    console.log(props)
   return (
    
     <div className=' flex justify-between flex-wrap'>
-    {props.loading? <div className='text-2xl bg-green-500 text-white text-center'>Loading...</div> :
+    {props.loading? <div className='text-2xl bg-green-500 flex justify-center w-full text-white text-center'>Loading...</div> :
       props.result.map((product) => (
-        <Link to={`/product/${product.id}`}>
+        <Link to={`/product/${product.id}`}  key={product.id}>
         <div 
         className='my-2 '
-        key={product.id}
         >
                 <div className=' p-1 w-36 h-60  overflow-hidden border bg-white transition-all duration-100 ease-in-out sm:w-56 sm:h-80  hover:border-green-500 hover:shadow-lg ' >
         <div className=' overflow-hidden border-green-500 border-b-2 h-2/4 sm:h-3/5'>

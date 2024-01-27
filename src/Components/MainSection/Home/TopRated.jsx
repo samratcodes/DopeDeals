@@ -7,7 +7,6 @@ const TopRated = () => {
   useEffect(() => {
     if(!loading){
       const  topRated = results.products.filter((product)=>product.rating > 4.9).slice(0,10)
-      console.log(topRated)
       setRating(topRated)
      }
       }, [loading]);
