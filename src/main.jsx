@@ -13,6 +13,9 @@ import Category from './Components/MainSection/Category/Category.jsx'
 import DopeDeals from './Components/MainSection/DopeDeals/DopeDeals.jsx'
 import Blogs from './Components/MainSection/Blogs/Blogs.jsx'
 import Default from './Default.jsx'
+import NavigationMenu from './Components/Navigation/NavigationMenu.jsx'
+import TopBar from './Components/Navigation/TopBar.jsx'
+import Footer from './Components/Footer/Footer.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
@@ -54,7 +57,12 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element:<App/>  
+    element:<>
+    <NavigationMenu/>
+    <TopBar/>
+    gffhh
+    <Footer/>
+    </> 
   }
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
