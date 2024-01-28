@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from '../../assets/Logo.png'
+import{Link} from 'react-router-dom'
 
 const NavigationMenu = () => {
+ const [SearchInput,setSearchInput] =useState()
   return (
     <>
     <div 
@@ -26,16 +28,19 @@ const NavigationMenu = () => {
         <input 
         className=' w-full bg-white focus:outline-none' 
         type="text" 
+        value={SearchInput}
+        onChange={(e)=>setSearchInput(e.target.value)}
         placeholder='Search some dope shit...'
         name="" 
         id=""
          />
+        <Link to={`/Search/${SearchInput}`}>
         <button 
          className=' bg-white ' 
          type="submit"
          >
         <i className="fa-solid fa-magnifying-glass"></i>
-        </button>
+        </button></Link>
     </div>
     <div
     className='flex sm:w-1/6 justify-around items-center'

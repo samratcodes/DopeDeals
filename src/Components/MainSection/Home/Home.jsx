@@ -13,8 +13,8 @@ const Home = () => {
 <MainSlider/>
 <Categories/>
 <DopestDeals/>
-<Shops/>
 <TopRated/>
+<Shops/>
     </div>
   )
   }

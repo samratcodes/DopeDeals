@@ -20,9 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+    errorElement:<Default/>,
     children:[
       {
-        path:'',
+        index: true,
         element:<Home/>
       },
       {
@@ -52,18 +53,14 @@ const router = createBrowserRouter([
       {
         path:'Blogs',
         element:<Blogs/>
+      },
+      {
+        path:'/Search/:search',
+        element:<>h</>
       }
     ]
   },
-  {
-    path: "*",
-    element:<>
-    <NavigationMenu/>
-    <TopBar/>
-    gffhh
-    <Footer/>
-    </> 
-  }
+ 
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
