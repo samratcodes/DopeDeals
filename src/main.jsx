@@ -12,6 +12,7 @@ import Brands from './Components/MainSection/Brands/Brands.jsx'
 import Category from './Components/MainSection/Category/Category.jsx'
 import DopeDeals from './Components/MainSection/DopeDeals/DopeDeals.jsx'
 import Blogs from './Components/MainSection/Blogs/Blogs.jsx'
+import Default from './Default.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
@@ -52,12 +53,8 @@ const router = createBrowserRouter([
     ]
   },{
     path: "*",
-    element: <App/>,
-    children:[
-      {
-        path:'*',
-        element:<Home/>
-      }]
+    element:<Default/>,
+   
    
   }
 ]);
