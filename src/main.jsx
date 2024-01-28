@@ -16,18 +16,18 @@ import Default from './Default.jsx'
 import NavigationMenu from './Components/Navigation/NavigationMenu.jsx'
 import TopBar from './Components/Navigation/TopBar.jsx'
 import Footer from './Components/Footer/Footer.jsx'
+import Search from './Components/Search/Search.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
-    errorElement:<Default/>,
     children:[
       {
-        index: true,
+        path:'',
         element:<Home/>
       },
       {
-        path:'about',
+        path:'home',
         element:<h1>About</h1>
       },
       {
@@ -55,11 +55,14 @@ const router = createBrowserRouter([
         element:<Blogs/>
       },
       {
-        path:'/Search/:search',
-        element:<>h</>
+        path:'Search/:search',
+        element:<Search/>
       }
     ]
-  },
+  },{
+    path: "*",
+    element: <Default/>,
+  }
  
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(

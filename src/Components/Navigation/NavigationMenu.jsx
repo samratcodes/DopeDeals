@@ -3,7 +3,7 @@ import Logo from '../../assets/Logo.png'
 import{Link} from 'react-router-dom'
 
 const NavigationMenu = () => {
- const [SearchInput,setSearchInput] =useState()
+ const [SearchInput,setSearchInput] =useState('M')
   return (
     <>
     <div 
@@ -21,7 +21,8 @@ const NavigationMenu = () => {
         Dope Deals
     </h1>
     </div>
-    <div 
+   <form >
+   <div 
     className='flex w-48 rounded-full p-2 bg-white sm:w-96' 
     id='SearchSection'
     >
@@ -42,6 +43,7 @@ const NavigationMenu = () => {
         <i className="fa-solid fa-magnifying-glass"></i>
         </button></Link>
     </div>
+   </form>
     <div
     className='flex sm:w-1/6 justify-around items-center'
     id='NavDetailsSection'
