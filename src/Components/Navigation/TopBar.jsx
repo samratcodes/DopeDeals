@@ -11,12 +11,12 @@ const TopBar = () => {
   return (
  
 <div className='w-full bg-slate-600 flex justify-center'  id='TopBar'>
-<div className='w-1/2 py-2 flex  justify-around items-center text-white text-base font-semibold '>
+<div className='w-full sm:w-1/2 py-2 flex  justify-around items-center text-white text-sm sm:text-base font-semibold '>
     <div>
       <Link to='/'>Home</Link>
     </div>
     <div className=" group">
-  <div >
+  <div className=' flex items-center' >
     Brands <i className="fa-solid fa-caret-down  group-hover:rotate-180"></i>
   </div>
   <div className="hidden absolute  bg-white border-l-4 border-green-600 py-2 px-4 rounded-lg group-hover:flex flex-col">
@@ -30,7 +30,7 @@ const TopBar = () => {
   </div>
 </div>
 <div className='group'>
-    <div>
+    <div className=' flex items-center'>
      Categories <i className="fa-solid fa-caret-down group-hover:rotate-180"></i>
     </div>
     <div className="hidden absolute  bg-white border-l-4 border-green-600 py-2 px-4 rounded-lg group-hover:flex flex-col">

@@ -51,7 +51,7 @@ const MainSlider = () => {
     <i className="fa-solid fa-truck-fast"></i> Fast Delivery
     </div>
    </div>
-    <div className=" w-3/5 flex rounded-lg overflow-hidden relative"> 
+    <div className=" w-full sm:w-3/5 flex rounded-lg overflow-hidden relative"> 
       <div
         className='flex transition ease-out duration-1000'
         style={{
