@@ -6,7 +6,7 @@ const DopestDeals = () => {
   const { results, loading } = useData();
   const [current, setCurrent] = useState([{id:1000000,title:'Loading...', description:'Loading...',rating:'Loading' ,price:'Loading...', discountPercentage:'Loading...', thumbnail:'Loading...'}]);
   
-
+console.log(results.products)
 useEffect(() => {
  if(!loading){
     const dopeProducts = results.products.filter((product)=>product.discountPercentage >17).slice(0,10)

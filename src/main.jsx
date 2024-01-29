@@ -17,6 +17,7 @@ import NavigationMenu from './Components/Navigation/NavigationMenu.jsx'
 import TopBar from './Components/Navigation/TopBar.jsx'
 import Footer from './Components/Footer/Footer.jsx'
 import Search from './Components/Search/Search.jsx'
+import Cart from './Components/MainSection/Cart/Cart.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
       {
         path:'Search/:search',
         element:<Search/>
+      },
+      {
+        path:'Cart',
+        element:<Cart/>
       }
     ]
   },{

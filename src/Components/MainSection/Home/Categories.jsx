@@ -25,8 +25,8 @@ const Categories = () => {
       </div>
       <div className=' flex overflow-x-auto  '>
       {categories.map((category,index)=>(
-         <Link to='/category/smartphones'>
-         <div key={index} className=' text-gray-700 rounded-xl text-xs sm:text-lg p-4 m-2 w-20 h-16 sm:w-32 sm:h-32 border-3 flex flex-col justify-center 
+         <Link key={index} to='/category/smartphones'>
+         <div  className=' text-gray-700 rounded-xl text-xs sm:text-lg p-4 m-2 w-20 h-16 sm:w-32 sm:h-32 border-3 flex flex-col justify-center 
          items-center hover:border-green-400 border-2' id='Home_Category'>
             {category.icon}
          {category.name}

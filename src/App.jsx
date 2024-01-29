@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Outlet } from 'react-router-dom'
 import './App.css'
 
@@ -11,11 +11,13 @@ import TopBar from './Components/Navigation/TopBar'
 
 
 const App = () => {
-
+const [cart,setCart]=useState([
+  {id:1,quantity:1}
+])
 
   const {loading,results,error} = useDataFetching('https://dummyjson.com/products?limit=100')
   return (
-    <DataProvider value={{loading,results,error}}>
+    <DataProvider value={{loading,results,error,cart}}>
 <NavigationMenu/>
 <TopBar/>
 <Outlet/>
