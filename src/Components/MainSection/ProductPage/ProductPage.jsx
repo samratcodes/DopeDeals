@@ -27,7 +27,7 @@ const ProductPage = () => {
         setPrice((results.price - (results.price * results.discountPercentage) / 100).toFixed(2))
         setActiveImage(results.images[0])
       }
-    }, [loading]);                                                      
+    }, [loading,id,results]);                                                      
 const [Price,setPrice] = useState((activeProduct.price - (activeProduct.price * activeProduct.discountPercentage) / 100).toFixed(2));
 const [activeImage,setActiveImage]=useState(activeProduct.images[0]);
 const changeActiveImage=(image)=>{
