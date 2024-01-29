@@ -3,6 +3,7 @@ import { useEffect,useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Card from '../Card'
 import { useData } from '../../../Context/DataContext'
+import Recommended from '../Home/Recommended'
 const Category = () => {
   
   const { results, loading } = useData();
@@ -15,11 +16,12 @@ const Category = () => {
     }
   }, [loading,category]);
   return (
-    <div className='flex justify-center'>
+    <div className='flex flex-col items-center'>
     <div className='w-4/5 flex flex-col '>
     <h1 className=' flex justify-center my-6 items-center text-3xl text-green-500 font-bold'>{category} </h1>
      <Card loading= {loading} result={current}  />
     </div>
+    <Recommended/>
     </div>
   )
 }

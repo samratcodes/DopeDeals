@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import  useDataFetching  from '../../../Hooks/useDataFetching'
 import Loader from '../Loader';
+import Recommended from '../Home/Recommended';
 const ProductPage = () => {
   const {id}=useParams();
     const {results,loading}=useDataFetching(`https://dummyjson.com/products/${id}`);
@@ -85,6 +86,7 @@ const changeActiveImage=(image)=>{
 </div>
 </div>
 }
+<Recommended/>
    </div>
   )
 }

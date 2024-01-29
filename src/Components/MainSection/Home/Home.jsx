@@ -4,6 +4,7 @@ import Categories from './Categories'
 import DopestDeals from './DopestDeals'
 import Shops from './Shops'
 import TopRated from './TopRated'
+import Recommended from './Recommended'
 
 
 
@@ -15,6 +16,7 @@ const Home = () => {
 <DopestDeals/>
 <TopRated/>
 <Shops/>
+<Recommended/>
     </div>
   )
   }

@@ -3,7 +3,7 @@ import Logo from '../../assets/Logo.png'
 import{Link} from 'react-router-dom'
 
 const NavigationMenu = () => {
- const [SearchInput,setSearchInput] =useState('M')
+ const [SearchInput,setSearchInput] =useState('')
   return (
     <>
     <div 

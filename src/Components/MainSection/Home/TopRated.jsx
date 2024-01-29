@@ -12,9 +12,9 @@ const TopRated = () => {
       }, [loading]);
    
   return (
-    <div className='w-full flex justify-center'>
+    <div className='w-full flex justify-center py-8'>
 <div className='w-4/5 '>
-<div className=' text-green-500 my-4 text-xl font-bold flex sm:text-3xl justify-center'>
+<div className=' text-green-500 my-8 text-xl font-bold flex sm:text-3xl justify-center'>
       <img className=' w-10 rounded-md' src="src/assets/Logo.png" alt="" /> &nbsp;Top Rated Products
       </div> 
 
