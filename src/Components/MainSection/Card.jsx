@@ -7,7 +7,8 @@ const Card = (props) => {
     <div className=' flex justify-between flex-wrap'>
     {props.loading? <Loader/> :
       props.result.map((product) => (
-        <Link to={`/product/${product.id}`}  key={product.id}>
+        <a href={`/product/${product.id}`}  key={product.id}>
+        
         <div 
         className='my-2 '
         >
@@ -33,7 +34,8 @@ const Card = (props) => {
        </div>
       </div>
         </div>
-        </Link>
+       
+        </a>
         
       )
     )}
