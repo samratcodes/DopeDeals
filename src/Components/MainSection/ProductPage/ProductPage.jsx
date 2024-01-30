@@ -106,6 +106,12 @@ onClick={()=>handleCart(activeProduct)}
 </div>
 </div>
 }
+<div className=' my-8 w-full flex justify-center'>
+  <div className='w-4/5 flex justify-center items-center font-bold text-3xl '>
+  <i className="fa-solid fa-circle-exclamation"></i>  No Reviews  Found
+  </div>
+  
+</div>
 <Recommended/>
    </div>
   )

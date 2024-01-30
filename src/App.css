@@ -41,3 +41,6 @@
 #ProductPage{
     background-color: rgb(241,243,245);
 }
+#Notifications{
+    z-index: 4;
+}
