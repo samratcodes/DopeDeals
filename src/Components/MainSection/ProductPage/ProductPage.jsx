@@ -4,7 +4,20 @@ import { useParams } from 'react-router-dom';
 import  useDataFetching  from '../../../Hooks/useDataFetching'
 import Loader from '../Loader';
 import Recommended from '../Home/Recommended';
+import { useData } from '../../../Context/DataContext';
+
 const ProductPage = () => {
+
+const {cart,addCart,addBuynow}= useData();
+const handleCart=(product)=>{
+  window.scrollTo(0,0)
+  addCart(product)
+}
+const handleBuynow=(product)=>{
+  window.scrollTo(0,0)
+  addBuynow(product)
+}
+
   const {id}=useParams();
     const {results,loading}=useDataFetching(`https://dummyjson.com/products/${id}`);
 
@@ -78,8 +91,15 @@ const changeActiveImage=(image)=>{
 </div>
 <div className='w-full'>
 <div className='flex justify-around'>
-<button className=' w-52 h-10 bg-green-500 text-white text-xl font-semibold'>Buy Now</button>
-<button className='w-52 h-10 bg-slate-400 text-white text-xl font-semibold'> <i class="fa-solid fa-plus"></i> Add to cart </button>
+<button  className=' w-52 h-10 bg-green-500 text-white text-xl font-semibold'
+onClick={()=>handleBuynow(activeProduct)}
+><Link to='/Cart'>
+Buy Now
+</Link></button>
+<button className='w-52 h-10 bg-slate-400 text-white text-xl font-semibold'
+onClick={()=>handleCart(activeProduct)}
+><Link to='/Cart'> <i class="fa-solid fa-plus"></i> Add to cart </Link></button>
+
 </div>
 </div>
 
