@@ -8,7 +8,7 @@ const Card = (props) => {
     {props.loading? <Loader/> :
       props.result.map((product) => (
         <Link to={`/product/${product.id}`}  key={product.id}>
-        <div 
+        <div onClick={()=>{window.scrollTo(0,0)}}
         className='my-2 '
         >
                 <div className=' p-1 w-36 h-60  overflow-hidden border bg-white transition-all duration-100 ease-in-out sm:w-56 sm:h-80  hover:border-green-500 hover:shadow-lg ' >

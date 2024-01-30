@@ -34,10 +34,10 @@ const changeActiveImage=(image)=>{
   setActiveImage(image);
 }
   return (
-   < div className='flex flex-col items-center p-4' id='ProductPage'>
+   < div className='flex flex-col items-center' id='ProductPage'>
 {loading?<Loader/>:
  
- <div   className=' w-11/12 sm:w-4/5  flex  flex-col sm:flex-row'>
+ <div   className=' w-11/12 sm:w-4/5 p-4 flex  flex-col sm:flex-row'>
  <div className='w-full sm:w-1/2 border-r-2 border-slate-200'>
     
 <div className='w-full '>
