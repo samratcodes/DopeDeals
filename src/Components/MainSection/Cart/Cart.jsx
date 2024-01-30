@@ -5,7 +5,6 @@ import { useData } from '../../../Context/DataContext';
 const Cart = () => {
 
 const {cart}= useData();
- console.log(cart)
     const [Data,setData]=useState(cart);
   const [total,setTotal]=useState(0);
   const handleCheckboxChange = (index) => {
@@ -79,14 +78,21 @@ const {cart}= useData();
         }
          <div className='p-2 flex flex-col justify-between items-center bg-slate-100'>
           <h1 className='text-2xl font-medium' > Order Summary</h1>
-          <div className='flex my-4 w-full justify-center sm:w-3/5'>
+          <div className='flex justify-between w-full sm:w-2/5'>
+            <h1 className='text-xl font-semibold'>Items total</h1>
+            <h1 className='text-2xl text-green-500 font-semibold'>${total}</h1>
+            </div>
+            <div className='flex justify-between w-full sm:w-2/5'>
+            <h1 className='text-xl font-semibold'>Shipping fees</h1>
+            <h1 className='text-2xl text-green-500 font-semibold'>$15</h1>
+            </div>
+          <div className='flex my-4 w-full justify-center sm:w-2/5'>
               <input className='focus:outline-none' type="text" name="" id="" placeholder='Enter Voucher Code ' />
               <button className='bg-green-400 p-2 font-semibold rounded-lg w-1/5 text-white'>Apply</button>
               </div>
           <div className='flex justify-between w-full sm:w-3/5'>
             <h1 className='text-xl font-semibold'>Total</h1>
-            <h1 className='text-3xl text-green-500 font-semibold'>${total}</h1>
-            
+            <h1 className='text-3xl text-green-500 font-semibold'>${+total+15}</h1>
             </div>
            
             <button className='bg-green-400 p-2 font-semibold rounded-lg w-2/5 text-white'

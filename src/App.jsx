@@ -11,33 +11,8 @@ import TopBar from './Components/Navigation/TopBar'
 
 
 const App = () => {
-const [cart,setCart]=useState([{
-  id:1,
-  price:95,
-  title:'Product 1',
-  "discountPercentage":4.15,
-  "brand":"Samsung",
-  thumbnail:"https://cdn.dummyjson.com/product-images/1/1.jpg",
-stock:10,
-isChecked: false,
-quantity:1
-},
-{"id":7,
-"title":"Samsung Galaxy Book S "
-,"description":"Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
-"price":1499,
-"discountPercentage":4.15,
-"rating":4.25,
-"stock":50,"brand":"Samsung",
-"category":"laptops",
-"thumbnail":"https://cdn.dummyjson.com/product-images/7/thumbnail.jpg",
-"images":["https://cdn.dummyjson.com/product-images/7/1.jpg",
-"https://cdn.dummyjson.com/product-images/7/2.jpg",
-"https://cdn.dummyjson.com/product-images/7/3.jpg",
-"https://cdn.dummyjson.com/product-images/7/thumbnail.jpg"],
-isChecked: false,
-quantity:1
-}
+const [cart,setCart]=useState([
+
 ])
 const addCart=(data)=>{
   setCart((prev)=>[...prev,{...data,isChecked: false,quantity:1}])

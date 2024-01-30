@@ -55,12 +55,12 @@ const NavigationMenu = () => {
     <div className=' flex items-center'>
     <i className="fa-regular fa-bell sm:flex hidden"></i>
     </div>
-    <div className="hidden absolute  bg-white border-2 border-green-600  group-hover:flex flex-col">
-    <div className='border border-green-300 p-2 text-xl'>
-    <i className="fa-regular fa-bell"></i> Get 60% off 
+    <div className="hidden absolute  bg-green-500 border-2 border-green-600  group-hover:flex flex-col">
+    <div className='border border-white p-2 text-base'>
+    <i className="fa-regular fa-bell"></i> Better Deals 
     </div>
-    <div className='border border-green-300 p-2 flex'>
-    <i className="fa-regular fa-bell"></i>Get 60% off 
+    <div className='border border-white text-base p-2 flex'>
+    <i className="  fa-regular fa-bell"></i>Get 60% off 
     </div>
  
 </div>

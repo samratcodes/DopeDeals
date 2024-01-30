@@ -1,13 +1,6 @@
 import React, { useEffect } from 'react'
-import { useData } from '../../Context/DataContext'
 import { Link } from 'react-router-dom'
 const TopBar = () => {
-  const { results, loading } = useData();
-  useEffect(() => {
-    if(!loading){
-      console.log(results.products.map((product)=>product.category))
-    }
-  }, [loading]);
   return (
  
 <div className='w-full bg-slate-600 flex justify-center'  id='TopBar'>
