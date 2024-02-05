@@ -11,11 +11,12 @@ const ProductPage = () => {
 const {cart,addCart,addBuynow}= useData();
 const handleCart=(product)=>{
   window.scrollTo(0,0)
-  addCart(product)
+  cart.find((item)=>item.id===product.id)?alert('Product already in the cart') : addCart(product)
 }
 const handleBuynow=(product)=>{
   window.scrollTo(0,0)
-  addBuynow(product)
+  cart.find((item)=>item.id===product.id)?console.log('Product already in the cart') : addBuynow(product)
+  
 }
 
   const {id}=useParams();

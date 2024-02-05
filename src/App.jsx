@@ -14,6 +14,12 @@ const App = () => {
 const [cart,setCart]=useState([
 
 ])
+
+const deleteCart = (index) => {
+  let newCart = [...cart];
+  newCart.splice(index, 1);
+  setCart(newCart);
+};
 const addCart=(data)=>{
   setCart((prev)=>[...prev,{...data,isChecked: false,quantity:1}])
 }
@@ -24,7 +30,7 @@ const addBuynow=(data)=>{
 
   const {loading,results,error} = useDataFetching('https://dummyjson.com/products?limit=100')
   return (
-    <DataProvider value={{loading,results,error,cart,addCart,addBuynow}}>
+    <DataProvider value={{loading,results,error,cart,addCart,addBuynow,deleteCart}}>
 <NavigationMenu/>
 <TopBar/>
 <Outlet/>

@@ -4,6 +4,7 @@ export const DataContext = createContext({
         loading:true,
         results:[],
         error:"",
+        deleteCart: (todo) => {},
         addCart: (todo) => {},
         addBuynow: (todo) => {},
 

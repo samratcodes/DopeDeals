@@ -4,7 +4,7 @@ import { useData } from '../../../Context/DataContext';
 
 const Cart = () => {
 
-const {cart}= useData();
+const {cart,deleteCart}= useData();
     const [Data,setData]=useState(cart);
   const [total,setTotal]=useState(0);
   const handleCheckboxChange = (index) => {
@@ -15,8 +15,9 @@ const {cart}= useData();
   };
 
   useEffect(() => {
+    setData(cart);
     updateTotal(Data);
-  }, [Data]);
+  }, [Data,cart,deleteCart]);
 
   const updateTotal = (newData) => {
     let totalPrice = 0;
@@ -34,10 +35,7 @@ const {cart}= useData();
     updateTotal(newData);
   };
   const handleDelete = (index) => {
-    const newData = [...Data];
-    newData.splice(index, 1);
-    setData(newData);
-    updateTotal(newData);
+    deleteCart(index);
   };
   return (
     <div className='my-4 flex justify-center'>
