@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "jsx": "react-jsx", // or "react" for older React versions
+      "strict": true,
+      "esModuleInterop": true,
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "target": "ES6",
+      "skipLibCheck": true,
+      "baseUrl": "./src"
+    }
+  }
+  

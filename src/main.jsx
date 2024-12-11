@@ -1,22 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import App from './App.tsx'
 import './index.css'
 import { RouterProvider } from 'react-router-dom'
 import {
   createBrowserRouter,
 } from "react-router-dom";
-import Home from './Components/MainSection/Home/Home.jsx'
-import ProductPage from './Components/MainSection/ProductPage/ProductPage.jsx'
+import Home from './Components/MainSection/Home/Home.tsx'
+import ProductPage from './Components/MainSection/ProductPage/ProductPage.tsx'
 import Brands from './Components/MainSection/Brands/Brands.jsx'
 import Category from './Components/MainSection/Category/Category.jsx'
 import DopeDeals from './Components/MainSection/DopeDeals/DopeDeals.jsx'
 import Blogs from './Components/MainSection/Blogs/Blogs.jsx'
-import Default from './Default.jsx'
-import NavigationMenu from './Components/Navigation/NavigationMenu.jsx'
-import TopBar from './Components/Navigation/TopBar.jsx'
-import Footer from './Components/Footer/Footer.jsx'
-import Search from './Components/Search/Search.jsx'
+import Default from './Default.tsx'
+import Search from './Components/Search/Search.tsx'
 import Cart from './Components/MainSection/Cart/Cart.jsx'
 const router = createBrowserRouter([
   {

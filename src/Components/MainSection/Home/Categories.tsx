@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 const Categories = () => {
     const categories = [
                         {name:'Smartphones',icon:<MdOutlineSmartphone className='sm:text-3xl text-xl'/>},
-                        {name:'furniture',icon:<i class="sm:text-3xl text-xl fa-solid fa-chair"></i>},
-                        {name:'Mens-Shirt',icon:<i class="sm:text-3xl text-xl fa-solid fa-shirt"></i>},
-                        {name:'Sunglasses',icon:<i class="sm:text-3xl text-xl fa-solid fa-glasses"></i>},
-                        {name:'Womens Bag',icon:<i class="sm:text-3xl text-xl fa-solid fa-bag-shopping"></i>},
-                        {name:'Laptops',icon:<i class="sm:text-3xl text-xl fa-solid fa-laptop"></i>},
-                        {name:'MoterCycle',icon:<i class="sm:text-3xl text-xl fa-solid fa-motorcycle"></i>},
+                        {name:'furniture',icon:<i className="sm:text-3xl text-xl fa-solid fa-chair"></i>},
+                        {name:'Mens-Shirt',icon:<i className="sm:text-3xl text-xl fa-solid fa-shirt"></i>},
+                        {name:'Sunglasses',icon:<i className="sm:text-3xl text-xl fa-solid fa-glasses"></i>},
+                        {name:'Womens Bag',icon:<i className="sm:text-3xl text-xl fa-solid fa-bag-shopping"></i>},
+                        {name:'Laptops',icon:<i className="sm:text-3xl text-xl fa-solid fa-laptop"></i>},
+                        {name:'MoterCycle',icon:<i className="sm:text-3xl text-xl fa-solid fa-motorcycle"></i>},
                         {name:'Watches',icon:<GiWatch className='sm:text-3xl text-xl'/>}
                        ]
   return (
